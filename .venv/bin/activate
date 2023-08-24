@@ -69,4 +69,6 @@ if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
 fi
 
 export FLASK_APP=$VIRTUAL_ENV/../todo_flask/app.py
-export DEBUG='True
+export DEBUG='True'
+
+export DATABASE_URL = 'postgres://localhost:5432/todo_flask'
